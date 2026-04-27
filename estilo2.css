@@ -1,0 +1,90 @@
+body{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color:#dfeee0;
+    color: #333;
+}
+
+/* NAVBAR */
+nav{
+    background: #1f2a2e;
+    padding: 15px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+}
+
+nav a{
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 6px 10px;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+nav a:hover{
+    background: #71b270;
+    color: white;
+}
+
+/* CONTENEDOR */
+.contenedor{
+    display: flex;
+    justify-content: center;
+    padding: 70px 20px;
+}
+
+/* TARJETA */
+.quesomos{
+    background: white;
+    padding: 35px;
+    width: 450px;
+    border-radius: 16px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    text-align: center;
+    transition: 0.3s;
+}
+
+.quesomos:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.12);
+}
+
+/* TITULO */
+h2{
+    color: #2f6f4e;
+    margin-bottom: 15px;
+}
+
+/* TEXTO */
+p{
+    color: #555;
+    line-height: 1.7;
+    font-size: 16px;
+}
+
+/* FOOTER */
+footer{
+    text-align: center;
+    padding: 18px;
+    background: #1f2a2e;
+    color: white;
+    margin-top: 40px;
+}
+
+.hero-img{
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+.hero-img img{
+    width: 50%;
+    max-width: 450px;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    object-fit: cover;
+}

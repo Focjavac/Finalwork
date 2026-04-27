@@ -1,0 +1,150 @@
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+nav{
+    background-color: #222;
+    padding: 15px;
+    text-align: center;
+}
+
+nav a{
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover{
+    color: #4CAF50;
+}
+
+
+.hero{
+    position: relative;
+    min-height: 100vh; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    overflow: hidden;
+}
+
+
+.hero > img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+
+.hero::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.45);
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+
+.hero h1,.hero p{
+    position: relative;
+    z-index: 2;
+    text-shadow: 2px 2px 6px rgba(0,0,0,0.8);
+}
+
+.hero h1{
+    font-size: 40px;
+}
+
+.hero p{
+    font-size: 18px;
+}
+
+
+.imagenes{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    gap: 10px;
+    z-index: 2;
+}
+
+.imagenes img{
+    width: 100px;
+    transition: 0.3s;
+}
+
+
+.girar1:hover{
+    transform: rotate(10deg) scale(1.05);
+}
+
+.girar2:hover{
+    transform: rotate(-10deg) scale(1.05);
+}
+
+
+footer{
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+.slider{
+    position: relative;
+    width: 80%;
+    max-width: 900px;
+    height: 400px;
+
+    margin-top: 25px;
+    margin-left: auto;
+    margin-right: auto;
+
+    overflow: hidden;
+    border-radius: 15px;
+
+    z-index: 2;
+}
+
+.slider img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-fit: contain;
+    opacity: 0;
+    transition: opacity 1s ease;
+}
+
+.slider img.visible{
+    opacity: 1;
+}
+a i{
+    font-size: 40px;
+    margin: 10px;
+    color: white;
+    transition: 0.3s;
+}
+
+a i:hover{
+    transform: scale(1.2);
+    color: #71b270;
+}
